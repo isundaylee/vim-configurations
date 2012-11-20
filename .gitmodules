@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vim-vividchalk"]
 	path = .vim/bundle/vim-vividchalk
 	url = https://github.com/tpope/vim-vividchalk
+[submodule ".vim/bundle/git-vim"]
+	path = .vim/bundle/git-vim
+	url = http://github.com/motemen/git-vim
