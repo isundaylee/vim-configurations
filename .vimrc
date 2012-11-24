@@ -164,7 +164,7 @@ set laststatus=2
 
 " Format the statusline
 set statusline=\ %F%m%r%h\ %y\ 
-set statusline+=%=CWD:\ %r%{CurDir()}%h\ \ POS:\ %4l/%4L:%4c\ \ FT:\ %y\  
+set statusline+=%=CWD:\ %r%{CurDir()}%h\ \ POS:\ %4l/%4L:%4c\ \  
 
 function! CurDir()
     let curdir = substitute(getcwd(), '/Users/Sunday', "~", "g")
