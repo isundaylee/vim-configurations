@@ -143,7 +143,7 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " {{{
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set tabstop=4
 set smarttab
 
@@ -271,8 +271,8 @@ nnoremap <leader><cr> :noh<cr>
 " Ctrl-A, Ctrl-E
 inoremap <c-a> <esc>I
 inoremap <c-e> <esc>A
-nnoremap <c-a> I<esc>
-nnoremap <c-e> A<esc>
+nnoremap <c-a> 0
+nnoremap <c-e> $
 
 " Ctrl-K
 inoremap <c-k> <esc>d$A
@@ -286,6 +286,10 @@ noremap $ g$
 
 " Indent shift
 nnoremap <tab><tab> >>
+nnoremap <s-tab><s-tab> <<
+vnoremap <tab><tab> >
+vnoremap <s-tab><s-tab> <
+
 " }}}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -293,5 +297,23 @@ nnoremap <tab><tab> >>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " {{{
 
+
+" }}}
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Rails
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" {{{
+
+nnoremap <leader>rc :Rcontroller 
+nnoremap <leader>rj :Rjavascript 
+nnoremap <leader>rs :Rstylesheet 
+nnoremap <leader>rk :Rake 
+nnoremap <leader>rr :Rails 
+nnoremap <leader>rg :Rgenerate 
+nnoremap <leader>rh :Rhelper 
+nnoremap <leader>rm :Rmodel 
+nnoremap <leader>rv :Rview 
+nnoremap <leader>rl :Rlayout 
 
 " }}}
