@@ -237,7 +237,7 @@ hi link coffeeSpaceError NONE
 " {{{
 nnoremap <leader>r :call OneKeyRun()<CR>
 
-function OneKeyRun()
+function! OneKeyRun()
     if &ft == 'ruby'
         setlocal makeprg=ruby\ %
     elseif &ft == 'python'
