@@ -284,6 +284,12 @@ noremap j gj
 noremap 0 g0
 noremap $ g$
 
+" Fast movement
+nnoremap <s-k> 10k
+nnoremap <s-j> 10j
+nnoremap <s-h> 10h
+nnoremap <s-l> 10l
+
 " Indent shift
 nnoremap <tab><tab> >>
 nnoremap <s-tab><s-tab> <<
