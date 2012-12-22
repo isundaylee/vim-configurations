@@ -82,7 +82,9 @@ set t_vb=
 set tm=500
 
 " Transparency
-set transparency=20
+if has("transparency")
+  set transparency=20
+endif
 " }}}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -321,5 +323,6 @@ nnoremap <leader>rh :Rhelper
 nnoremap <leader>rm :Rmodel 
 nnoremap <leader>rv :Rview 
 nnoremap <leader>rl :Rlayout 
+nnoremap <leader>ri :Rinitializer
 
 " }}}
